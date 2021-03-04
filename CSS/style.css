@@ -90,6 +90,7 @@ i{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-bottom: 2rem;
+    justify-content: center;
 }
 .projects div{
     height: auto;
@@ -117,7 +118,7 @@ i{
 /*Skills*/
 
 .skills{
-    padding: 8rem 0;
+    padding: 6rem 0;
 }
 .skills ul{
     display: flex;
@@ -191,5 +192,40 @@ i{
     }
     .footer{
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .main-body h2{
+        font-size: 2rem
+    }
+    .main-body p{
+        font-size: 1.5rem
+    }
+    .projects .project h2{
+        font-size: 1.5rem;
+    }
+    .projects .project p{
+        font-size: 1.2rem;
+    }
+
+    .skills{
+        padding: 4rem 0;
+    }
+    .skills ul li{
+        margin: 0 0.8rem ;
+        font-size: 3.8rem;
+    }
+
+    
+    .footer .left-footer ul li{
+        font-size: 1.4rem;
+    }
+
+}
+@media screen and (max-width: 350px){
+    .skills ul li{
+
+        font-size: 2.4rem;
     }
 }
